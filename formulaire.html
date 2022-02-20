@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mep_formulaire.css">
+    <title>Formulaire d'inscription</title>
+</head>
+
+<body>
+    <header>
+        <h1>Evevenement Partenaire</h1>
+        <h2>Inscription</h2>
+    </header>
+    <form method="post" action="traitement.php">
+            <Label for="nom">Votre nom :</Label> <br>
+            <input type="text" name="Nom" id="nom" placeholder="Ex: Dupont" required>
+
+            <br><br>
+            <Label for="prenom">Votre prénom :</Label> <br>
+            <input type="text" name="prenom" id="prenom" placeholder="Ex: Pierre" required>
+
+            <br><br>
+            <label for="sexe">Votre sexe :</label>
+            <select name="sexe" id="sexe" required>
+                <option value="">Séléctionner</option>
+                <option value="Femme">Femme</option>
+                <option value="Homme">Homme</option>
+                <option value="autre_sexe">Autres</option>
+            </select>
+
+            <br><br>
+
+            <label for="nbr">Nombre de personnes accompagntrices :</label>
+            <input type="number" name="nbr" id="nbr" min="1" max="8" placeholder="Ex: 2" required>
+            
+        <div id="date">    
+            <p>Veuillez sélectionner votre date ?</p>
+            <div>
+                <input type="radio" name="date" value="13 mai 2022"  id="13mai" required> 
+                <label for="13mai">13 mai 2022</label> <br>
+            </div>
+            <div>
+                <input type="radio" name="date" value="14 mai 2022" id="14mai"> 
+                <label for="14mai"> 14 mai 2022</label> <br>
+            </div>
+            <div>
+            <input type="radio" name="date" value="15 mai 2022 "id="15mai"> 
+            <label for="15mai">15 mai 2022</label> <br>
+            </div>
+        </div>
+            <br>
+            <label for="commentaire">Commentaires (optionnel) :</label> <br>
+            <textarea name="commentaire" id="" cols="30" rows="10" placeholder="Veuillez écrire votre commentaire ici"></textarea>
+            
+            <br><br>
+            <div id="bouton">
+                <input type="submit" value="Envoyer">
+                <input type="reset">
+            </div>    
+    </form> 
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'anudawregular';
+    src: url('font/ANUDRG__-webfont.eot');
+    src: url('font/ANUDRG__-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/ANUDRG__-webfont.woff2') format('woff2'),
+         url('font/ANUDRG__-webfont.woff') format('woff'),
+         url('font/ANUDRG__-webfont.ttf') format('truetype'),
+         url('font/ANUDRG__-webfont.svg#anudawregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'anudawitalic';
+    src: url('font/ANUDI___-webfont.eot');
+    src: url('font/ANUDI___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/ANUDI___-webfont.woff2') format('woff2'),
+         url('font/ANUDI___-webfont.woff') format('woff'),
+         url('font/ANUDI___-webfont.ttf') format('truetype'),
+         url('font/ANUDI___-webfont.svg#anudawitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+form
+{
+    background-color: white;
+    border: 3px solid black;
+    padding: 10px 10px 10px 10px;
+    font-size: 1.2em;
+}
+
+
+label, p
+{
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+#date label
+{
+    font-weight: normal;
+    font-size: 1.1em;
+}
+
+body
+{
+    width: 70%;
+    margin: auto;
+    background-color: rgb(139, 219, 219);
+}
+
+h1
+{
+    font-family: 'anudawregular';
+    text-align: center;
+}
+
+h2
+{
+    font-family: 'anudawitalic';
+    font-size: 1em;
+    text-align: center;
+}
+
+input[type="text"] 
+{
+    width: 100%;
+    height: 40px;
+    font-size: 1em;
+}
+input[type="number"]
+{
+    font-size: 1em;
+    height: 30px; 
+}
+
+select
+{
+    font-size: 1em;
+}
+
+textarea
+{
+    width: 100%;
+}
+
+#date
+{
+    display: flex;
+    align-items: center;
+}
+
+#date div
+{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+input, textarea
+{
+    background-color: rgb(192, 241, 241);
+    border: none;
+    font-size: 1.2em;
+}
+
+#bouton
+{
+    display: flex;
+    justify-content: center;
+}
+#bouton input
+{
+    border-radius: 10px;
+    padding: 4px 8px 4px 8px;
+    margin: 0px 4px 0px 4px;
+}
+
+@media all and (max-width:1140px)
+{
+    body
+    {
+        width: 100%;
+        margin: none;
+    }   
+
+    form
+    {
+      font-size: 1em;
+    }
+
+    #date
+    {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+}
+
